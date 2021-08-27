@@ -78,18 +78,21 @@ import { createXStateSlice } from "./createXStateSlice";
        ) => {
          const isLoggedIn = true;
         //  Perform some async check here
-         if (isLoggedIn) {
-           send({
-             type: "REPORT_IS_LOGGED_IN",
-             userDetails: {
-               username: "mpocock1",
-             },
-           });
-         } else {
-           send({
-             type: "REPORT_IS_LOGGED_OUT",
-           });
-         }
+
+        // uncomment the following to see the dispatch error
+
+        //  if (isLoggedIn) {
+        //    send({
+        //      type: "REPORT_IS_LOGGED_IN",
+        //      userDetails: {
+        //        username: "mpocock1",
+        //      },
+        //    });
+        //  } else {
+        //    send({
+        //      type: "REPORT_IS_LOGGED_OUT",
+        //    });
+        //  }
        },
      },
      actions: {
